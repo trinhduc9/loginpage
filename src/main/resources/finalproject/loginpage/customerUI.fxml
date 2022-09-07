@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject.loginpage.LoginController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cover.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="480.0" layoutX="100.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+      <Button layoutX="430.0" layoutY="590.0" mnemonicParsing="false" onAction="#toCustomerLogin" prefHeight="30.0" prefWidth="62.0" text="Log Out" />
+      <Button alignment="BOTTOM_LEFT" contentDisplay="TOP" layoutX="210.0" layoutY="280.0" mnemonicParsing="false" onAction="#toCustomerLogin" prefHeight="70.0" prefWidth="70.0" text="Rent">
+         <graphic>
+            <ImageView fitHeight="63.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@rmitlogo.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button contentDisplay="TOP" layoutX="320.0" layoutY="280.0" mnemonicParsing="false" onAction="#enableDialog" prefHeight="70.0" prefWidth="70.0" text="Return">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic></Button>
+      <Button layoutX="320.0" layoutY="380.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="Button" />
+      <Button layoutX="265.0" layoutY="470.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="Button" />
+      <Button contentDisplay="TOP" layoutX="210.0" layoutY="380.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="Return">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+      </Button>
+      <DialogPane fx:id="dialogPane" layoutX="371.0" layoutY="355.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="480.0" visible="false">
+          <header>
+            <AnchorPane fx:id="dialog" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+          </header>
+          <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+          </content>
+          <expandableContent>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+          </expandableContent>
+      </DialogPane>
+   </children>
+</Pane>

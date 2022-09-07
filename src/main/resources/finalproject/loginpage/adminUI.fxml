@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject.loginpage.LoginController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cover.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="480.0" layoutX="100.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+      <Button layoutX="430.0" layoutY="590.0" mnemonicParsing="false" onAction="#toCustomerLogin" prefHeight="30.0" prefWidth="62.0" text="Log Out">
+         <font>
+            <Font name="Calibri Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="87.0" layoutY="132.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="128.0" text="Button">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="185.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+      </Button>
+      <Button layoutX="361.0" layoutY="341.0" mnemonicParsing="false" text="Button" />
+   </children>
+</Pane>
